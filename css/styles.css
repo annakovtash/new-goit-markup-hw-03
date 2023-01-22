@@ -1,0 +1,356 @@
+:root {
+  --primary-background-color: #FFFFFF;
+  --secondary-background-color: #F4F4FD;
+  --accent-background-color: #2E2F42;
+  --primary-text-color: #2E2F42;
+  --secondary-text-color: #434455;
+  --hero-text-color: #FFFFFF;
+  --accent-text-color: #4D5AE5;
+  --border-project-color: #E7E9FC;
+}
+
+body {
+  background-color: var(--primary-background-color);
+  color: var(--primary-text-color);
+  font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;}
+
+.disable-styles {
+  list-style: none;
+}
+
+.container {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+img {
+  display: block;
+}
+/* Header */
+
+.header {
+
+border-bottom: solid 2px #E7E9FC;
+}
+
+/* Logo */
+
+.logo {
+display: block;
+color: var(--accent-text-color);
+text-decoration: none;
+text-transform: uppercase;
+font-family: 'Raleway';
+font-weight: 800;
+font-size: 18px;
+line-height: 1.33;
+color: var(--primary-text-color);
+margin-right: 76px;
+
+
+}
+.logo .web {
+text-decoration: none;
+text-transform: uppercase;
+font-family: 'Raleway';
+font-weight: 800;
+font-size: 18px;
+line-height: 1.33;
+color: var(--accent-text-color);
+
+}
+
+/* Site nav */
+
+.site-nav {
+  display: flex;
+}
+
+.site-nav .item:not(:last-child) {
+  margin-right: 40px;
+}
+.site-nav .link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  font-weight: 500;
+  text-decoration: none;
+
+  color: var(--secondary-text-color);
+
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-text-color);
+}
+.site-contacts {
+  display: flex;
+}
+
+.site-contacts .contacts-list + .contacts-list {
+  margin-left: 40px;
+}
+
+.site-contacts {
+  margin-left: auto;
+}
+
+.contacts-item {
+  color: var(--secondary-text-color);
+  text-decoration: none;
+}
+.contacts-item:hover,
+.contacts-item:focus {
+  color: var(--accent-text-color);
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+
+/* Hero */
+
+.hero {
+  padding: 188px 0;
+
+}
+.hero, .footer {
+  background-color: var(--accent-background-color);
+}
+
+.hero-title {
+  font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-weight: 700;
+font-size: 56px;
+line-height: 1.07;
+text-align: center;
+letter-spacing: 0.02em;
+
+color: var(--hero-text-color);
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 30px;
+width: 500px;
+
+}
+
+.button {
+
+font-weight: 500;
+font-size: 16px;
+line-height: 1.87;
+text-align: center;
+letter-spacing: 0.06em;
+color: var(--hero-text-color);
+background-color: var(--accent-text-color);
+margin: 0 auto;
+display: block;
+border: 0;
+border-radius: 4px;
+cursor: pointer;
+padding: 16px 32px;
+text-align: center;
+display: inline-block;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* Features */
+
+
+.features-list {
+  display: flex;
+  gap: 24px;
+}
+
+.features-item {
+  flex-basis: calc((100% - 72px) / 4);
+}
+
+
+.features-title {
+
+font-size: 20px;
+font-weight: 500;
+line-height: 1.2;
+text-transform: capitalize;
+color: var(--primary-text-color);
+margin-bottom: 8px;
+}
+
+.features-description {
+
+color: var(--secondary-text-color);
+
+}
+
+/* About */
+
+.about {
+  padding-top: 0px;
+}
+.title {
+text-transform: capitalize;
+font-weight: 700;
+font-size: 36px;
+line-height: 1.11;
+text-align: center;
+color: var(--primary-text-color);
+padding-top: 0px;
+margin-bottom: 50px;
+}
+.about-list {
+  display: flex;
+  gap: 24px;
+
+}
+
+
+/* Team */
+
+.team {
+  background-color: var(--secondary-background-color);
+  text-align: center;
+
+}
+
+.name {
+font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+color: var(--primary-text-color);
+}
+
+.position {
+
+letter-spacing: 0.02em;
+font-size: 16px;
+line-height: 1.5;
+color: var(--secondary-text-color);
+}
+
+.team-list {
+  display: flex;
+  gap: 24px;
+}
+.team-item {
+background-color: var(--primary-background-color);
+border-radius: 0px 0px 4px 4px;
+padding-bottom: 30px;
+box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.name {
+  margin-top: 32px;
+  margin-bottom: 8px;
+}
+
+/* Footer */
+
+.footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.footer .logo {
+  color: var(--hero-text-color);
+  display: block;
+  margin-bottom: 16px;
+}
+.footer-description {
+  width: 264px;
+}
+
+.footer-description p {
+  color: var(--border-project-color);
+}
+
+/* 2nd page - Portfolio  */
+.menu {
+  padding-top: 96px;
+}
+.menu-button {
+  background-color: var(--secondary-background-color);
+  color: var(--accent-text-color);
+  font-family: inherit;
+  font-weight: 500;
+  border: 1px solid var(--border-project-color);
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 16px 32px;
+
+}
+.menu-button:hover,
+.menu-button:focus {
+  background-color: var(--accent-text-color);
+  color: var(--hero-text-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.menu-list {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.case {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--primary-text-color);
+  padding-bottom: 8px;
+  }
+
+
+.case-category {
+color: var(--secondary-text-color);
+}
+
+/* projects */
+
+.projects {
+  padding-top: 50px;
+}
+
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  flex-basis: calc((100% - 60px) / 3);
+}
+.projects-description {
+  padding: 32px 16px;
+  border: 1px solid var(--border-project-color);
+  border-top: 0px;
+}
